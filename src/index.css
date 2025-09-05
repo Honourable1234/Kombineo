@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Background gradient utility */
+.custom-gradient {
+  background: linear-gradient(120.08deg, #E1FAFF -12.23%, #F3FDFF 110.92%);
+}
+nav{
+  box-shadow: 0px 2.88112px 7.06917px rgba(0, 0, 0, 0.05);
+}
+.custom-h1Gradient {
+  background-image: linear-gradient(to right, #000000, #7F7F7F, #000000, #6E6E6E, #000000, #999999);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-completeGradient {
+  background: linear-gradient(90deg, #035E71 0%, #5DA9B9 27%, #035E71 100%);
+  border-radius: 8px;
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@layer utilities {
+  .custom-textGradient {
+    @apply bg-[linear-gradient(90deg,#035E71_0%,#5DA9B9_27%,#035E71_100%)]
+           bg-clip-text
+           text-transparent;
+  }
+  .custom-bgGradient {
+    @apply bg-[linear-gradient(90deg,#035E71_0%,#5DA9B9_27%,#035E71_100%)]
+  }
+  
+}
